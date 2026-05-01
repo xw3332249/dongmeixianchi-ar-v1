@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0c3d2a" />
+  <title>侗美仙池｜一叶侗香，自然好茶</title>
+  <meta name="description" content="侗美仙池用户端数字体验页：扫码唤醒侗茶小绣，了解三江早春茶、侗族非遗与助农故事，领取专属体验徽章。" />
+  <link rel="preload" as="image" href="assets/background_tea.png" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
+  <script type="module">
+    window.addEventListener("DOMContentLoaded", () => {
+      setTimeout(() => {
+        if (!customElements.get("model-viewer")) {
+          import("https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js").catch(() => {});
+        }
+      }, 2500);
+    });
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div id="leafLayer" class="leaf-layer" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="侗美仙池首页">
+      <img src="assets/logo.png" alt="侗美仙池品牌标识" />
+      <span>
+        <strong>侗美仙池</strong>
+        <small>DONGMEI XIANCHI TEA</small>
+      </span>
+    </a>
+    <nav class="nav" aria-label="页面导航">
+      <a href="#story">品牌故事</a>
+      <a href="#scan">扫码体验</a>
+      <a href="#guide">小绣导览</a>
+      <a href="#products">产品系列</a>
+      <a href="#promise">助农承诺</a>
+    </nav>
+    <button id="soundToggle" class="pill-btn" type="button" aria-pressed="false">语音：开</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">三江早春茶 · 侗族非遗 · 助农茶礼</p>
+        <h1>一叶侗香<br />自然好茶</h1>
+        <p class="lead">来自三江云雾茶山的早春鲜叶，遇见侗族纹样、鼓楼意象与手艺人的温度。扫码进入侗茶小绣导览，听一杯茶背后的产地、非遗与助农故事。</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#scan">扫码唤醒小绣</a>
+          <a class="ghost-btn" href="#products">查看茶礼系列</a>
+        </div>
+        <div class="trust-row" aria-label="品牌核心价值">
+          <div><b>早春鲜</b><span>高山云雾孕育</span></div>
+          <div><b>有手艺</b><span>侗族非遗美学</span></div>
+          <div><b>有温度</b><span>消费助力茶农</span></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal delay-1">
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <img src="assets/poster_target.png" alt="侗美仙池品牌海报" />
+            <div class="scan-glow"></div>
+          </div>
+        </div>
+        <div class="float-tag tag-a">扫码见茶山</div>
+        <div class="float-tag tag-b">小绣来导览</div>
+        <div class="float-tag tag-c">领取体验徽章</div>
+      </div>
+    </section>
+
+    <section id="story" class="section story-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Brand Story</p>
+        <h2>每一杯茶，都承载着非遗匠心与茶农初心</h2>
+        <p>侗美仙池把“三江早春茶”的鲜爽，与侗族非遗的美学转化为一套可感知的品牌体验。消费者不需要看复杂说明，只要扫码，就能顺着小绣的讲述看见茶山、手艺和助农去向。</p>
+      </div>
+      <div class="story-grid reveal">
+        <article class="story-card dark">
+          <span>01</span>
+          <h3>自然鲜韵</h3>
+          <p>高山云雾、早春抢鲜、生态茶园，形成清润鲜爽的第一口记忆。</p>
+        </article>
+        <article class="story-card">
+          <span>02</span>
+          <h3>非遗传承</h3>
+          <p>将侗族服饰纹样、织锦色彩、鼓楼意象转化为包装、IP 与互动视觉。</p>
+        </article>
+        <article class="story-card warm">
+          <span>03</span>
+          <h3>助农增收</h3>
+          <p>通过产品销售、茶农故事、传承人内容与公益反馈，让购买更有意义。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="scan" class="section scan-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Scan Experience</p>
+        <h2>扫描海报或包装，唤醒侗茶小绣</h2>
+        <p>把手机对准侗美仙池海报、茶盒或展架识别图，即可进入数字导览。现在点击下方按钮，模拟一次真实扫码体验。</p>
+      </div>
+
+      <div class="scan-grid">
+        <div class="scan-device reveal">
+          <div class="scan-toolbar"><span></span><span></span><span></span><em>AR SCAN</em></div>
+          <div class="scan-target-wrap">
+            <img src="assets/poster_target.png" alt="侗美仙池识别海报" />
+            <div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div>
+            <div id="scanLine" class="scan-line"></div>
+            <div id="scanSuccess" class="scan-success" aria-live="polite">识别成功 · 小绣已出现</div>
+          </div>
+          <button id="startScan" class="primary-btn wide" type="button">开始扫描</button>
+        </div>
+
+        <div class="scan-copy reveal delay-1">
+          <div class="glass-card">
+            <h3>这不是普通海报</h3>
+            <p>它是品牌的数字入口：扫一下，就能听产地故事、看非遗纹样、了解助农去向，还能领取专属体验徽章。</p>
+          </div>
+          <div class="step-list">
+            <div><i>1</i><span>扫描包装 / 海报</span></div>
+            <div><i>2</i><span>进入小绣导览</span></div>
+            <div><i>3</i><span>了解茶山、非遗、助农故事</span></div>
+            <div><i>4</i><span>完成问答并领取徽章</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guide" class="section guide-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Xiaoxiu Guide</p>
+        <h2>你好，我是侗茶小绣</h2>
+        <p>我会带你看见一杯茶的来处：它来自三江茶山，也来自侗族手艺人的纹样与茶农的辛勤。</p>
+      </div>
+
+      <div class="ar-shell reveal">
+        <div class="ar-topbar">
+          <span class="live-dot"></span>
+          <strong>侗茶小绣 · 数字导览中</strong>
+          <div class="progress-chip"><span id="progressCount">0/5</span> 已体验</div>
+        </div>
+        <div class="ar-canvas" id="arCanvas">
+          <img class="ar-bg" src="assets/background_tea.png" alt="三江茶山背景" />
+          <div class="depth-ring ring-a"></div>
+          <div class="depth-ring ring-b"></div>
+          <button class="hotspot hotspot-a" type="button" data-tip="高山云雾滋养，让早春茶拥有清爽鲜润的口感。">鲜</button>
+          <button class="hotspot hotspot-b" type="button" data-tip="侗族纹样与鼓楼意象，让包装更有三江记忆。">艺</button>
+          <button class="hotspot hotspot-c" type="button" data-tip="每一次选择，都是对茶农与手艺人的支持。">善</button>
+
+          <div id="modelStage" class="model-stage" aria-label="侗茶小绣 3D 数字导览员">
+            <div class="model-badge" aria-hidden="true">DUAL 3D</div>
+            <model-viewer
+              id="xiaoxiuModel"
+              class="xiaoxiu-model"
+              src="assets/model/xiaoxiu_default.glb"
+              alt="侗茶小绣 3D 模型：默认导览形象"
+              camera-controls
+              auto-rotate
+              auto-rotate-delay="1200"
+              rotation-per-second="8deg"
+              shadow-intensity="1.25"
+              shadow-softness="0.9"
+              exposure="1.55"
+              environment-image="neutral"
+              camera-orbit="150deg 72deg auto"
+              min-camera-orbit="-180deg 56deg auto"
+              max-camera-orbit="180deg 88deg auto"
+              field-of-view="24deg"
+              min-field-of-view="17deg"
+              max-field-of-view="38deg"
+              interaction-prompt="auto"
+              loading="lazy"
+              reveal="auto"
+              touch-action="pan-y"
+              data-front-orbit="150deg 72deg auto"
+              data-side-orbit="86deg 72deg auto"
+              data-back-orbit="-28deg 72deg auto">
+            </model-viewer>
+            <div id="modelLoader" class="model-loader" aria-live="polite">
+              <span class="loader-ring"></span>
+              <strong>正在加载 3D 小绣</strong>
+              <small>加载完成后可拖动旋转、放大查看</small>
+            </div>
+            <div class="model-shadow" aria-hidden="true"></div>
+            <div class="model-ground-glow" aria-hidden="true"></div>
+            <div class="model-hint">拖动旋转 · 查看真实 3D 小绣</div>
+            <div class="model-mode-chip" id="modelModeChip">当前：默认导览模型</div>
+            <div class="model-view-actions" aria-label="3D模型视角切换">
+              <button type="button" data-view="front">正面</button>
+              <button type="button" data-view="side">侧面</button>
+              <button type="button" data-view="back">背面</button>
+            </div>
+          </div>
+          <div class="speech-bubble" id="speechBubble">欢迎来到侗美仙池。我是 3D 侗茶小绣，点击“和小绣互动”，可以查看动作表情与互动反馈。</div>
+
+          <aside class="info-panel left-panel">
+            <h3>今日推荐</h3>
+            <p id="guideText">先从“听小绣介绍”开始，了解侗美仙池为什么把好茶、非遗与助农放在一起。</p>
+          </aside>
+          <aside class="info-panel right-panel">
+            <h3>体验收获</h3>
+            <ul>
+              <li>认识三江早春茶</li>
+              <li>看懂侗族非遗纹样</li>
+              <li>领取侗茶体验徽章</li>
+            </ul>
+          </aside>
+        </div>
+        <div class="control-dock" aria-label="互动按钮">
+          <button class="dock-btn" data-action="voice" type="button"><span>🔊</span>听小绣介绍</button>
+          <button class="dock-btn" data-action="motion" type="button"><span>🧚</span>和小绣互动</button>
+          <button class="dock-btn" data-action="culture" type="button"><span>🪡</span>看非遗纹样</button>
+          <button class="dock-btn" data-action="support" type="button"><span>🌱</span>看助农去向</button>
+          <button class="dock-btn" data-action="quiz" type="button"><span>❓</span>茶知识问答</button>
+          <button class="dock-btn" data-action="reward" type="button"><span>🏅</span>领取徽章</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section product-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Tea Series</p>
+        <h2>不同场景，都有一杯合适的侗美仙池</h2>
+        <p>从日常自饮、节日送礼到三江旅行纪念，侗美仙池把自然好茶做成更容易选择、也更愿意分享的茶礼体验。</p>
+      </div>
+      <div class="product-grid reveal">
+        <article class="product-card">
+          <img src="assets/emoji_tea.png" alt="日常鲜享装" />
+          <div>
+            <p class="product-tag">日常饮用</p>
+            <h3>早春鲜享装</h3>
+            <p>清润鲜爽，适合办公室、家庭日常冲泡。轻包装、好入口、适合复购。</p>
+            <button class="secondary-btn" data-action="product" data-name="早春鲜享装" type="button">了解这一款</button>
+          </div>
+        </article>
+        <article class="product-card highlight">
+          <img src="assets/badge.png" alt="非遗茶礼盒" />
+          <div>
+            <p class="product-tag">礼品赠送</p>
+            <h3>非遗茶礼盒</h3>
+            <p>融入侗族纹样与鼓楼意象，适合节日送礼、企业伴手礼与文化茶礼。</p>
+            <button class="secondary-btn light" data-action="product" data-name="非遗茶礼盒" type="button">查看茶礼亮点</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="assets/action_happy.png" alt="文旅纪念款" />
+          <div>
+            <p class="product-tag">文旅纪念</p>
+            <h3>小绣文旅纪念款</h3>
+            <p>结合 IP、打卡、问答与徽章，适合景区、展馆、茶博会的年轻游客体验。</p>
+            <button class="secondary-btn" data-action="product" data-name="小绣文旅纪念款" type="button">看看怎么体验</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="promise" class="section promise-section">
+      <div class="promise-card reveal">
+        <p class="eyebrow">Good Tea, Good Cause</p>
+        <h2>喝一杯好茶，也把善意留在三江</h2>
+        <p>侗美仙池希望让消费者清楚看见：一杯茶不只有味道，也有产地、手艺和人的故事。未来包装可接入茶农信息、非遗元素解析、助农金额说明与溯源页面，让“消费即助力”真正可感知。</p>
+        <div class="promise-points">
+          <div><strong>给茶农</strong><span>稳定采购与品牌溢价，支持茶山持续经营。</span></div>
+          <div><strong>给手艺人</strong><span>让纹样、织锦、鼓楼意象走进现代茶礼。</span></div>
+          <div><strong>给消费者</strong><span>喝到好茶，也知道自己支持了什么。</span></div>
+        </div>
+        <div class="promise-actions">
+          <button id="shareBtn" class="primary-btn" type="button">分享给朋友</button>
+          <button id="saveBtn" class="ghost-btn" type="button">收藏这个茶礼</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button id="modalClose" class="modal-close" type="button" aria-label="关闭弹窗">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <footer class="footer">
+    <p>侗美仙池 · 寻鲜守艺 · 向善共生</p>
+    <small>DONGMEI XIANCHI TEA · Natural Fresh Charm · Intangible Heritage · Supporting Farmers</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

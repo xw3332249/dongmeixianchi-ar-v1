@@ -1,0 +1,16 @@
+第9版 GitHub 上传说明
+
+建议新建仓库名：dongcha-ar-v9
+
+重要：不要上传 ZIP 文件。请先解压，再上传解压后的内容。
+
+推荐分批上传，避免 GitHub 网页提交失败：
+第一批：上传 index.html、script.js、style.css、版本说明.txt、GitHub上传说明.txt、第9版素材清单.txt，以及 assets 文件夹中除 model 文件夹以外的内容。
+第二批：进入 assets/model 文件夹，单独上传 xiaoxiu_default.glb 和 xiaoxiu_interact.glb。
+
+模型大小说明：
+只要单个 glb 小于 25MB，就可以用 GitHub 网页上传。你这版模型约 13MB 和 11MB，建议分批上传更稳。
+
+Pages 设置：
+Settings → Pages → Source 选择 Deploy from a branch → Branch 选择 main / root → Save。
+等待 1-3 分钟后访问：https://你的用户名.github.io/dongcha-ar-v9/
